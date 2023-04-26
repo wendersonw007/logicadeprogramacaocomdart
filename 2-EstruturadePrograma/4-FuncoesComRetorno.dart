@@ -44,6 +44,5 @@ imprimirResultado(double imc) {
     print('Obesidade grau 2');
   } else {
     print('Obesidade grau 3');
-  }
-  ;
+  };
 }

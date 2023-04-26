@@ -10,7 +10,7 @@ main(){
     print(texto);
     if(texto == 'sair') {
       condicao = false;
-      print(' === Programa finalizad ===');
+      print(' === Programa finalizado ===');
     } else {
       print('=== Vodê digitou: $texto');
     }

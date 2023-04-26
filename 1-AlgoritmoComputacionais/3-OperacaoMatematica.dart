@@ -10,5 +10,16 @@ main(){
   var totalnovo = (2 + 2) * 5 + (2 / 2);
   print(totalnovo);
 
+
+  //usando a função com parametro de retorno 
+  var num3 = 10;
+  var num4 = 10;
+  var soma2 = resultadoSoma(num3, num4);
+  print(soma2);
+
  
+}
+
+int resultadoSoma(int num1, int num2){
+  return num1 + num2;
 }
