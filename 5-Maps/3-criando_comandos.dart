@@ -1,0 +1,41 @@
+import 'dart:io';
+
+Map<String, dynamic> cadastro = {};
+
+main() {
+  bool condicao = true;
+  while (condicao) {
+    print(" === Digite um comando ( cadastro || imprimir )=== ");
+    String? comando = stdin.readLineSync();
+    if (comando == "sair") {
+      condicao = false;
+    } else if (comando == "cadastro") {
+      cadastrar();
+      print("\x1B[2J\x1B[0;0H");
+    } else if (comando == "imprimir") {
+      print(cadastro);
+    } else {
+      print(" === Esse comando não existe === ");
+    }
+  }
+
+  print(cadastro);
+}
+
+cadastrar() {
+  // print("=== Digite o seu Nome ===");
+  // String? nome = stdin.readLineSync();
+  // cadastro["nome"] = nome;
+  print("=== Digite o seu Nome ===");
+  String? nome = stdin.readLineSync();
+  cadastro["nome"] = nome;
+
+  print("=== Digite o sua Idade ===");
+  cadastro["idade"] = stdin.readLineSync();
+
+  print("=== Digite o sua Cidade ===");
+  cadastro["cidade"] = stdin.readLineSync();
+
+  print("=== Digite o seu estado ===");
+  cadastro["estado"] = stdin.readLineSync();
+}
